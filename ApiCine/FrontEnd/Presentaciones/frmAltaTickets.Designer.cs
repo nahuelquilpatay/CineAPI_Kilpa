@@ -47,9 +47,6 @@
             this.lblFuncion = new System.Windows.Forms.Label();
             this.cboFuncion = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.txtCosto2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.id_tipo_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_butaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_funcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +55,9 @@
             this.nom_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ape_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnQuitar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtCosto2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,6 +276,7 @@
             // 
             this.dgvDetalles.AllowUserToAddRows = false;
             this.dgvDetalles.AllowUserToDeleteRows = false;
+            this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetalles.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -296,38 +297,6 @@
             this.dgvDetalles.Size = new System.Drawing.Size(958, 266);
             this.dgvDetalles.TabIndex = 12;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(8, 414);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(90, 22);
-            this.btnSalir.TabIndex = 19;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // txtCosto2
-            // 
-            this.txtCosto2.Location = new System.Drawing.Point(739, 23);
-            this.txtCosto2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCosto2.Name = "txtCosto2";
-            this.txtCosto2.Size = new System.Drawing.Size(78, 24);
-            this.txtCosto2.TabIndex = 20;
-            this.txtCosto2.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(690, 32);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 15);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Costo:";
             // 
             // id_tipo_pago
             // 
@@ -380,6 +349,38 @@
             this.btnQuitar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseColumnTextForButtonValue = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(8, 414);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(90, 22);
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // txtCosto2
+            // 
+            this.txtCosto2.Location = new System.Drawing.Point(739, 23);
+            this.txtCosto2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCosto2.Name = "txtCosto2";
+            this.txtCosto2.Size = new System.Drawing.Size(78, 24);
+            this.txtCosto2.TabIndex = 20;
+            this.txtCosto2.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(690, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 15);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Costo:";
             // 
             // frmAltaTickets
             // 

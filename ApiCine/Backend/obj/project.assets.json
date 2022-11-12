@@ -496,11 +496,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\Backend\\Backend.csproj",
+      "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\Backend\\obj\\",
+      "outputPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",

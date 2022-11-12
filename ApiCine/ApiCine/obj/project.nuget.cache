@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ek+xlgm0P+OPZILNOV1mayxuImzz7BC+vq3uvHnlUPQmM7ZLS3RaZN7RBuzVv6Nrfjv4YcQgLUfLh4WYJM9zg==",
+  "dgSpecHash": "rurBljl8X5IzHdoAf+1D8hUpybUa8a446F+IpenegxqC8nyp1vBXR8xm6ji1udC1keCjyHwl03o14iG/wuHH2A==",
   "success": true,
-  "projectFilePath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\ApiCine\\ApiCine.csproj",
+  "projectFilePath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\ApiCine\\ApiCine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ignacio\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Ignacio\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

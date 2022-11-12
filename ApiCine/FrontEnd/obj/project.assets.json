@@ -515,11 +515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\FrontEnd\\FrontEnd.csproj",
+      "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\FrontEnd\\obj\\",
+      "outputPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -536,8 +536,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\Backend\\Backend.csproj": {
-              "projectPath": "D:\\Repositorios\\Cine-CRUD-API\\ApiCine\\Backend\\Backend.csproj"
+            "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj": {
+              "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj"
             }
           }
         }

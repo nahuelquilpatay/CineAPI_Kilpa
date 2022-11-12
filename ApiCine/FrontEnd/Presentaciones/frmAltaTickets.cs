@@ -163,8 +163,9 @@ namespace FrontEnd.Presentaciones
             cboTipoPagos.SelectedValue = -1;
             txtDescuento.Text = Convert.ToString(0);
             txtCosto2.Text = Convert.ToString(0);
+            txtCosto2.Text = Convert.ToString(0);
+            txtTotal.Text = Convert.ToString(0);
             dgvDetalles.Rows.Clear();
-            CalcularTotal();
         }
 
         private async void btnAgregar_Click_1(object sender, EventArgs e)
