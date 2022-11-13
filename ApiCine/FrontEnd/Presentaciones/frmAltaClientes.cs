@@ -28,7 +28,6 @@ namespace FrontEnd.Presentaciones
         }
         private IServicio servicio;
 
-
         private static frmAltaClientes instancia = null;
 
         public static frmAltaClientes ObtenerInstancia()
@@ -43,12 +42,10 @@ namespace FrontEnd.Presentaciones
         {
 
         }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
-
         private void frmAltaClientes_Load(object sender, EventArgs e)
         {
             cargarClientes();
@@ -60,10 +57,8 @@ namespace FrontEnd.Presentaciones
             var lst = JsonConvert.DeserializeObject<List<Cliente>>(data);
             dataGridView1.DataSource = lst;
         }
-
         private async Task insertarClientesAsync()
-        {
-            
+        {           
             cliente.Nombre = txtNombre.Text;
             cliente.Apellido = txtApellido.Text;
             cliente.Dni = Convert.ToInt64(txtDni.Text);
@@ -71,8 +66,6 @@ namespace FrontEnd.Presentaciones
             cliente.Altura = Convert.ToInt32(txtAltura.Text);
             cliente.Email = txtEmail.Text;
             cliente.Telefono = Convert.ToInt64(txtTelefono.Text);
-
-
 
             string bodyContent = JsonConvert.SerializeObject(cliente);
             string url = "https://localhost:7066/cliente";
@@ -91,16 +84,13 @@ namespace FrontEnd.Presentaciones
                 MessageBox.Show("Cliente no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             if (validarCliente())
             {
                 insertarClientesAsync();
             }
-
         }
-
         private bool validarCliente()
         {
             bool ok = true;
@@ -110,6 +100,20 @@ namespace FrontEnd.Presentaciones
                 MessageBox.Show("Insertar nombre.");
                 txtNombre.Focus();
                 ok = false;
+            }
+            else
+            {
+                try
+                {
+                    Convert.ToInt32(txtNombre.Text);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Ingrese un nombre válido");
+                    txtNombre.Clear();
+                    txtNombre.Focus();
+                    ok = false;
+                }
             }
             if (txtApellido.Text == "")
             {
@@ -190,10 +194,8 @@ namespace FrontEnd.Presentaciones
                     ok = false;
                 }
             }
-
             return ok;
         }
-
         private void limpiar()
         {
             txtAltura.Text = "";
@@ -204,14 +206,12 @@ namespace FrontEnd.Presentaciones
             txtNombre.Text = "";
             txtEmail.Text = "";
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea Salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
             {
                 this.Dispose();
-            }
-            
+            }          
         }
         private async Task eliminarCliente(int id)
         {
@@ -219,7 +219,6 @@ namespace FrontEnd.Presentaciones
             var result = await ClientSingleton.GetInstancia().DeleteAsync(url);
             //COMPLETAR
         }
-
         private async void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int entero;
@@ -230,7 +229,6 @@ namespace FrontEnd.Presentaciones
             }           
             await cargarClientes();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("¿Desea limpiar los campos?", "CANCELANDO", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

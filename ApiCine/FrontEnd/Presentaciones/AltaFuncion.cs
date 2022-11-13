@@ -143,6 +143,15 @@ namespace FrontEnd.Presentaciones
                 nudSala.Focus();
                 ok = false;
             }
+            foreach (DataGridViewRow row in dvgFunciones.Rows)
+            {
+                if (row.Cells["Sala"].Value.ToString().Equals(nudSala.Value.ToString()) & row.Cells["Fecha"].Value.ToString().Equals(dateTimePicker1.Value.ToString()))
+                {
+                    MessageBox.Show("Sala ya reservada para la fecha");
+                    ok = false;
+                }
+
+            }
 
             return ok;
         }

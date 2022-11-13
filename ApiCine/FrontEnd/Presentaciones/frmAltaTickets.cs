@@ -131,22 +131,22 @@ namespace FrontEnd.Presentaciones
                 }
                 
             }
-            if (txtDescuento.Text == "")
+            if (txtCosto2.Text == "0")
             {
-                MessageBox.Show("Seleccionar descuento");
-                txtDescuento.Focus();
+                MessageBox.Show("Ingresar costo");
+                txtCosto2.Focus();
                 ok = false;
             }
             else
             {
                 try
                 {
-                    Convert.ToInt32(txtDescuento.Text);
+                    Convert.ToInt32(txtCosto2.Text);
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Solo números");
-                    txtDescuento.Focus();
+                    txtCosto2.Focus();
                     ok = false;
                 }
             }
@@ -215,9 +215,15 @@ namespace FrontEnd.Presentaciones
         }
         private async void btnAceptar_Click(object sender, EventArgs e)
         {
-            await insertarTicketAsync();
-            limpiar();
-            
+            if(dgvDetalles.Rows.Count > 0)
+            {
+                await insertarTicketAsync();
+                limpiar();
+            }
+            else
+            {
+                MessageBox.Show("Insertar detalles");
+            }
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
