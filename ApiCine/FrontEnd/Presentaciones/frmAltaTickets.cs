@@ -21,8 +21,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FrontEnd.Presentaciones
 {
-    //PRUEBA DE MERGE (KILPA)
-
+    //rama main
     public partial class frmAltaTickets : Form
     {
         private IServicio servicio;
