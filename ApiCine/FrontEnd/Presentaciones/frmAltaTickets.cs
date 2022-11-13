@@ -99,14 +99,11 @@ namespace FrontEnd.Presentaciones
                 MessageBox.Show("ERROR INTERNO, CONTACTE UN ADMINISTRADOR");
                 return false;
             } 
-        }
-          
-        
+        }  
         private async Task insertarDetalles()
         {
 
         }
-    
         private bool Validar()
         {
             bool ok = true;
@@ -154,7 +151,6 @@ namespace FrontEnd.Presentaciones
             }
             return ok;
         }
-
         private void limpiar()
         {
             cboFuncion.SelectedValue = -1;
@@ -167,7 +163,6 @@ namespace FrontEnd.Presentaciones
             txtTotal.Text = Convert.ToString(0);
             dgvDetalles.Rows.Clear();
         }
-
         private async void btnAgregar_Click_1(object sender, EventArgs e)
         {
             if (Validar())
@@ -193,7 +188,6 @@ namespace FrontEnd.Presentaciones
                 CalcularTotal();
             }
         }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea Salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
@@ -201,7 +195,6 @@ namespace FrontEnd.Presentaciones
                 this.Dispose();
             }
         }
-
         private async Task textooTicket()
         {
             string url = "https://localhost:7066/proximoTicket";
@@ -209,7 +202,6 @@ namespace FrontEnd.Presentaciones
             int lst = JsonConvert.DeserializeObject<int>(data);
             lblProximoTicket.Text = "TICKET Nº " + lst;
         }
-
         private void dgvDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvDetalles.CurrentCell.ColumnIndex == 7)
@@ -220,14 +212,12 @@ namespace FrontEnd.Presentaciones
                 CalcularTotal();
             }
         }
-
         private async void btnAceptar_Click(object sender, EventArgs e)
         {
             await insertarTicketAsync();
             limpiar();
             
         }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("¿Desea cancelar?", "CANCELANDO", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -235,7 +225,6 @@ namespace FrontEnd.Presentaciones
                 limpiar();
             }
         }
-
         private void CalcularTotal()
         {
             double total = oTicket.CalcularSubTotal();
@@ -246,82 +235,5 @@ namespace FrontEnd.Presentaciones
                 txtTotal.Text = (total - dto).ToString();
             }
         }
-
-        //private void btnAceptar_Click(object sender, EventArgs e)
-        //{
-        //    if (cboTipoPago.Text == string.Empty)
-        //    {
-        //        MessageBox.Show("Ingresar tipo de pago", "AVISO",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //        cboTipoPago.Focus();
-        //        return;
-        //    }
-        //    if (cboSucursal.Text == string.Empty)
-        //    {
-        //        MessageBox.Show("Ingresar sucursal", "AVISO",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //        cboSucursal.Focus();
-        //        return;
-        //    }
-        //    if (cboCliente.Text == string.Empty)
-        //    {
-        //        MessageBox.Show("Ingresar cliente", "AVISO",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //        cboCliente.Focus();
-        //        return;
-        //    }
-        //    if (dgvDetalles.Rows.Count < 1)
-        //    {
-        //        MessageBox.Show("Ingresar por lo menos 1 detalle", "AVISO",
-        //            MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        //        dgvDetalles.Focus();
-        //        return;
-        //    }
-
-        //    nuevo.id_ticket = servicio.proximoTicket();
-        //    nuevo.id_tipo_pago = cboTipoPago.SelectedIndex + 1;
-        //    nuevo.id_sucursal = cboSucursal.SelectedIndex + 1;
-        //    nuevo.id_cliente = cboCliente.SelectedIndex + 1;
-        //    nuevo.fecha_compra = Convert.ToDateTime(dtpFecha.Value);
-
-        //    if (servicio.insertarTicket(nuevo))
-        //    {
-        //        MessageBox.Show("Ticket guardado");
-        //        limpiar();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Ticket NO guardado");
-        //    }
-
-        //}
-        //private async Task insertarClientesAsync()
-        //{
-
-        //    cliente.Nombre = txtNombre.Text;
-        //    cliente.Apellido = txtApellido.Text;
-        //    cliente.Dni = Convert.ToInt64(txtDni.Text);
-        //    cliente.Calle = txtCalle.Text;
-        //    cliente.Altura = Convert.ToInt32(txtAltura.Text);
-        //    cliente.Email = txtEmail.Text;
-        //    cliente.Telefono = Convert.ToInt64(txtTelefono.Text);
-
-        //    string bodyContent = JsonConvert.SerializeObject(cliente);
-        //    string url = "https://localhost:7066/cliente";
-        //    var result = await ClientSingleton.GetInstancia().PostAsync(url, bodyContent);
-
-        //    if (result.Equals("1"))
-        //    {
-        //        MessageBox.Show("Cliente Registrado",
-        //            "Informe",
-        //            MessageBoxButtons.OK,
-        //            MessageBoxIcon.Information);
-        //        cargarClientes();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Cliente no registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
     }
 }
