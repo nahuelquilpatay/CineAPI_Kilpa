@@ -163,7 +163,7 @@ namespace FrontEnd.Presentaciones
             cboTipoPagos.SelectedValue = -1;
             txtDescuento.Text = Convert.ToString(0);
             txtCosto2.Text = Convert.ToString(0);
-            txtCosto2.Text = Convert.ToString(0);
+            txtCosto.Text = Convert.ToString(0);
             txtTotal.Text = Convert.ToString(0);
             dgvDetalles.Rows.Clear();
         }
