@@ -88,5 +88,10 @@ namespace FrontEnd.Presentaciones
             else
                 txtConfContra.UseSystemPasswordChar = true;
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

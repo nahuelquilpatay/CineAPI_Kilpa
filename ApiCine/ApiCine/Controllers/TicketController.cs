@@ -40,9 +40,9 @@ namespace ApiCine.Controllers
         {
             return Ok(oServicio.getconsultarTipoPago());
         }      
-        
+      
         [HttpPost("/Ticket")]
-        public IActionResult PostTicket(Ticket a) //HIJO DE MIL PUTA
+        public IActionResult PostTicket(Ticket a)
         {
                
             if (a == null)

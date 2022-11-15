@@ -39,5 +39,14 @@ namespace FrontEnd.Presentaciones
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Today.ToShortDateString();
         }
+
+        private void btnSalirr_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("¿Desea cerrar el programa?","SALIENDO",MessageBoxButtons.YesNo,MessageBoxIcon.Question)
+                == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

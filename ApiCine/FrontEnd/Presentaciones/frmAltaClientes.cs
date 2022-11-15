@@ -128,6 +128,14 @@ namespace FrontEnd.Presentaciones
                     ok = false;
                 }
             }
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["Dni"].Value.ToString().Equals(txtDni.Text))
+                {
+                    MessageBox.Show("Cliente ya registrado");
+                    ok = false;
+                }
+            }
             if (txtCalle.Text == "")
             {
                 MessageBox.Show("Ingresar calle.");
@@ -223,7 +231,6 @@ namespace FrontEnd.Presentaciones
                 limpiar();
             }      
         }
-
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -233,7 +240,6 @@ namespace FrontEnd.Presentaciones
                 return;
             }
         }
-
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -243,7 +249,6 @@ namespace FrontEnd.Presentaciones
                 return;
             }
         }
-
         private void txtCalle_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))

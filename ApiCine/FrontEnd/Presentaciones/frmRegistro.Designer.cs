@@ -94,6 +94,7 @@
             this.btnRegresar.TabIndex = 8;
             this.btnRegresar.Text = "REGRESAR AL LOGIN";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // txtNombreUsuario
             // 

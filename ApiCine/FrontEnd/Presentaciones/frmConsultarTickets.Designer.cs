@@ -36,6 +36,7 @@
             // 
             // dvgTickets
             // 
+            this.dvgTickets.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dvgTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnAnular});
@@ -48,8 +49,10 @@
             // 
             // btnAnular
             // 
-            this.btnAnular.HeaderText = "ANULAR";
+            this.btnAnular.HeaderText = "Acciones";
             this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Text = "ANULAR";
+            this.btnAnular.UseColumnTextForButtonValue = true;
             // 
             // btnSalir
             // 
@@ -59,17 +62,21 @@
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmConsultarTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dvgTickets);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmConsultarTickets";
-            this.Text = "frmConsultarTickets";
+            this.Text = "CONSULTAR TICKETS";
             this.Load += new System.EventHandler(this.frmConsultarTickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgTickets)).EndInit();
             this.ResumeLayout(false);

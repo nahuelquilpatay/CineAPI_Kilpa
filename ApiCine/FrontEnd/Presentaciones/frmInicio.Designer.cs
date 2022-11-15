@@ -35,6 +35,7 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.tmrCine = new System.Windows.Forms.Timer(this.components);
+            this.btnSalirr = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -94,12 +95,24 @@
             this.tmrCine.Enabled = true;
             this.tmrCine.Tick += new System.EventHandler(this.tmrCine_Tick);
             // 
+            // btnSalirr
+            // 
+            this.btnSalirr.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalirr.Location = new System.Drawing.Point(228, 93);
+            this.btnSalirr.Name = "btnSalirr";
+            this.btnSalirr.Size = new System.Drawing.Size(75, 23);
+            this.btnSalirr.TabIndex = 5;
+            this.btnSalirr.Text = "SALIR";
+            this.btnSalirr.UseVisualStyleBackColor = true;
+            this.btnSalirr.Click += new System.EventHandler(this.btnSalirr_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(541, 121);
+            this.Controls.Add(this.btnSalirr);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.label1);
@@ -123,5 +136,6 @@
         private Label lblHora;
         private Label lblFecha;
         private System.Windows.Forms.Timer tmrCine;
+        private Button btnSalirr;
     }
 }

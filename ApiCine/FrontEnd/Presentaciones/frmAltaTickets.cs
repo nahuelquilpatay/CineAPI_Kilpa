@@ -121,15 +121,13 @@ namespace FrontEnd.Presentaciones
                 cboFuncion.Focus();
                 ok = false;
             }
-
             foreach (DataGridViewRow row in dgvDetalles.Rows)
             {
                 if (row.Cells["id_butaca"].Value.ToString().Equals(cboButaca.Text) & row.Cells["id_funcion"].Value.ToString().Equals(cboFuncion.Text))
                 {
                     MessageBox.Show("Butaca ya reservada");
                     ok = false;
-                }
-                
+                }             
             }
             if (txtCosto2.Text == "0")
             {
@@ -190,8 +188,6 @@ namespace FrontEnd.Presentaciones
         {
             if (Validar())
             {
-                //TRACKEAR LAS PELICULAS Y FUNCIONES ASI PODEMOS CARGAR EN LA DATAGRIDVIEW LOS DATOS CORRESPONDIENTES PARA UNA MEJOR VISUALIZACION
-
                 Cliente cliente2 = (Cliente)cboClientes.SelectedItem;
                 cliente2.Id_Cliente = (int)cboClientes.SelectedValue;
 
@@ -264,7 +260,6 @@ namespace FrontEnd.Presentaciones
                 txtTotal.Text = (total - dto).ToString();
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             var frmConsultar = new frmConsultarTickets();

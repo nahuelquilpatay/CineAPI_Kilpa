@@ -19,7 +19,6 @@ namespace FrontEnd.Presentaciones
         public frmConsultarTickets()
         {
             InitializeComponent();
-
         }
 
         private IServicio servicio;
@@ -53,7 +52,6 @@ namespace FrontEnd.Presentaciones
             var lst = JsonConvert.DeserializeObject<List<DetalleTicket>>(data);
             return lst;
         }
-
         private async Task anularTicket(int id)
         {
             var url = "https://localhost:7066/eliminarTicket?id=" + id;
@@ -63,7 +61,6 @@ namespace FrontEnd.Presentaciones
                 MessageBox.Show("¡ERROR! ACCIÓN NO PERMITIDA EN ESTA FUNCIÓN");
             }
         }
-
         private async void dvgTickets_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int entero;
@@ -73,6 +70,15 @@ namespace FrontEnd.Presentaciones
                 await anularTicket(entero);
             }
             await cargarTickets();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("¿Volver?","VOLVIENDO",MessageBoxButtons.YesNo,MessageBoxIcon.Question)
+                == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
         }
     }
 }

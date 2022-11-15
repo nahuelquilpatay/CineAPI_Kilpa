@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj": {}
+    "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj": {
+    "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
+        "projectUniqueName": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\illan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\obj\\",
+        "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
+        "outputPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\illan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,29 +64,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj": {
+    "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\illan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\obj\\",
+        "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
+        "outputPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\illan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -101,8 +92,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj": {
-                "projectPath": "C:\\Users\\illan\\OneDrive\\Escritorio\\CINE_githubkilpa\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj"
+              "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj": {
+                "projectPath": "D:\\RepositoriosYo\\CineAPI_Kilpa\\ApiCine\\Backend\\Backend.csproj"
               }
             }
           }
@@ -128,8 +119,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -141,7 +131,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

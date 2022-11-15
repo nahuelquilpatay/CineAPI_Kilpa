@@ -50,16 +50,16 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
-            "113935 - Quilpatay, Nahuel Ignacio",
-            "113869 - Illanes, Matías Nahuel",
             "114275 - Colazo, Braian",
             "113861 - Davila, Augusto Alejandro",
+            "111858 - Delfino, David Elías",
             "113443 - Fonseca, María Victoria",
-            "111858 - Delfino, David Elías"});
+            "113869 - Illanes, Matías Nahuel",
+            "113935 - Quilpatay, Nahuel Ignacio"});
             this.listBox1.Location = new System.Drawing.Point(13, 86);
             this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(267, 124);
+            this.listBox1.Size = new System.Drawing.Size(269, 124);
             this.listBox1.TabIndex = 1;
             // 
             // label2
