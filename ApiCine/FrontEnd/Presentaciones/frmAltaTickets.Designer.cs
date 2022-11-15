@@ -58,6 +58,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtCosto2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -382,12 +383,23 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "Costo:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(103, 413);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Anular Tickets";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmAltaTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(980, 440);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCosto2);
             this.Controls.Add(this.btnSalir);
@@ -454,5 +466,6 @@
         private DataGridViewTextBoxColumn nom_cliente;
         private DataGridViewTextBoxColumn ape_cliente;
         private DataGridViewButtonColumn btnQuitar;
+        private Button button1;
     }
 }

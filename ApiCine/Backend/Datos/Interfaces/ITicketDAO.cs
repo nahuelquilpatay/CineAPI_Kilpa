@@ -10,6 +10,8 @@ namespace Backend.Datos.Interfaces
 {
     public interface ITicketDAO
     {
+        public bool getEliminarTicket(int idTicket);
+        public List<Ticket> getconsultarTicket();
         DataTable getConsultarDB(string NomProc);
         bool getEliminarFuncion(int idFuncion);
         int getProximoTicket();

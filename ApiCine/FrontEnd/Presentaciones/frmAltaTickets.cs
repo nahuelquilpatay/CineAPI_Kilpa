@@ -75,7 +75,7 @@ namespace FrontEnd.Presentaciones
             cboClientes.ValueMember = "Id_Cliente";
             cboClientes.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-        private async Task<List<Cliente>> cargarClientes2()
+        private async Task<List<Cliente>?> cargarClientes2()
         {
             string url = "https://localhost:7066/consultarClientes";
             var data = await ClientSingleton.GetInstancia().GetAsync(url);
@@ -263,6 +263,12 @@ namespace FrontEnd.Presentaciones
                 double dto = (total * Convert.ToDouble(txtDescuento.Text)) / 100;
                 txtTotal.Text = (total - dto).ToString();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frmConsultar = new frmConsultarTickets();
+                frmConsultar.Show();
         }
     }
 }

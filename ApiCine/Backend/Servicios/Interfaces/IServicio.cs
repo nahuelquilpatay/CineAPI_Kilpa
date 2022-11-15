@@ -24,5 +24,7 @@ namespace Backend.Servicios.Interfaces
         bool getInsertarUsuarios(Usuario oUsuario);
         List<Pelicula> GetPeliculas();
         List<FuncionComplementaria> getConsultarFuncionesTicket();
+        List<Ticket> getconsultarTicket();
+        public bool getEliminarTicket(int idTicket);
     }
 }

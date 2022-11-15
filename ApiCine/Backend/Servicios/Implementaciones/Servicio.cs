@@ -82,10 +82,18 @@ namespace Backend.Servicios.Implementaciones
         {
             return oDao.GetPeliculas();
         }
+        public List<Ticket> getconsultarTicket()
+        {
+            return oDao.getconsultarTicket();
+        }
 
         public int getProximoTicket()
         {
             return oDao.getProximoTicket();
+        }
+        public bool getEliminarTicket(int idTicket)
+        {
+            return oDao.getEliminarTicket(idTicket);
         }
     }
 }

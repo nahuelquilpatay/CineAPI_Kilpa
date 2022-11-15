@@ -59,6 +59,23 @@ namespace ApiCine.Controllers
                 throw;
             }
         }
+        
+        [HttpDelete("/eliminarTicket")]
+        public IActionResult eliminarTicket(int id)
+        {
+            try
+            {
+                if (id == 0)
+                {
+                    return BadRequest("error al dar de alta  la funcion");
+                }
+                return Ok(oServicio.getEliminarTicket(id));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         [HttpPost("/Ticket22")]
         public IActionResult PostTicket(Ticket a)
@@ -68,6 +85,11 @@ namespace ApiCine.Controllers
 
             else
                 return Ok(oServicio.getConfirmarTicket(a));
+        }
+        [HttpGet("/consultaTickets")]
+        public IActionResult GetTickets()
+        {
+            return Ok(oServicio.getconsultarTicket());
         }
 
         //// GET: api/<Clientes>

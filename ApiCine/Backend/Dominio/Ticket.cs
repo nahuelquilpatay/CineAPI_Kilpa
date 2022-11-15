@@ -12,6 +12,8 @@ namespace Backend.Dominio
         public List<DetalleTicket> Detalles { get; set; }
         public int Pago { get; set; }
 
+        public int Activo { get; set; }
+       
         //public TipoPago Pago { get; set; } VER
 
 

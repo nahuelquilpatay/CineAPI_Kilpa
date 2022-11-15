@@ -90,6 +90,22 @@ namespace Backend.Datos.Implementaciones
             }
             return clientes;
         }
+        public List<Ticket> getconsultarTicket()
+        {
+            List<Ticket> clientes = new List<Ticket>();
+            DataTable dt = HelperDAO.ObtenerInstancia().Consultar("SP_CONSULTAR_TICKET");
+            foreach (DataRow r in dt.Rows)
+            {
+                Ticket n = new Ticket();
+                n.TicketNro = Convert.ToInt32(r["id_ticket"]);
+                n.Fecha = (DateTime)(r["fecha_compra"]);
+                n.Pago = Convert.ToInt32(r["id_tipo_pago"]);
+                n.Activo = Convert.ToInt32(r["activo"]);
+                n.Cliente = Convert.ToInt32(r["id_cliente"]);
+                clientes.Add(n);
+            }
+            return clientes;
+        }
 
         public DataTable getConsultarDB(string NomProc) //NO USADO
         {
@@ -122,11 +138,20 @@ namespace Backend.Datos.Implementaciones
             conn.Close();
             return tabla;
         }
+
         public bool getEliminarCliente(int idCliente)
         {
             string sp = "SP_ELIMINAR_CLIENTE";
             List<Parametro> lst = new List<Parametro>();
             lst.Add(new Parametro("@id", idCliente));
+            int afectadas = HelperDAO.ObtenerInstancia().EjecutarSQL(sp, lst);
+            return afectadas > 0;
+        }
+        public bool getEliminarTicket(int idTicket)
+        {
+            string sp = "bajaTickets";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@idTicket", idTicket));
             int afectadas = HelperDAO.ObtenerInstancia().EjecutarSQL(sp, lst);
             return afectadas > 0;
         }

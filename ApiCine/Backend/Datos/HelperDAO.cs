@@ -12,7 +12,7 @@ namespace Backend.Datos
     internal class HelperDAO
     {
         private static HelperDAO instancia;
-        private SqlConnection cnn = new SqlConnection(@"Data Source=DESKTOP-L9CRCP4\SQLEXPRESS;Initial Catalog=cineNov6_Nuevo;Integrated Security=True");
+        private SqlConnection cnn = new SqlConnection(@"Data Source=localhost;Initial Catalog=Cine2;Integrated Security=True");
         
         public static HelperDAO ObtenerInstancia()
         {
