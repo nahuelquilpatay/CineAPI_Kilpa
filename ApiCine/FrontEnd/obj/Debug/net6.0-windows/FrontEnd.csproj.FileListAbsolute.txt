@@ -309,7 +309,6 @@ D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\bin\Debug\net6.0-windows\Backen
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\bin\Debug\net6.0-windows\Backend.pdb
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.csproj.AssemblyReference.cache
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.AltaFuncion.resources
-D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmAcercaDe.resources
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmAltaClientes.resources
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmAltaTickets.resources
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmAtajos.resources
@@ -330,3 +329,4 @@ D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\refint
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.pdb
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.genruntimeconfig.cache
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\ref\FrontEnd.dll
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmNosotros.resources

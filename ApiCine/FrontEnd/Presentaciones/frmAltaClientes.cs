@@ -101,20 +101,7 @@ namespace FrontEnd.Presentaciones
                 txtNombre.Focus();
                 ok = false;
             }
-            else
-            {
-                try
-                {
-                    Convert.ToInt32(txtNombre.Text);
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("Ingrese un nombre válido");
-                    txtNombre.Clear();
-                    txtNombre.Focus();
-                    ok = false;
-                }
-            }
+ 
             if (txtApellido.Text == "")
             {
                 MessageBox.Show("Ingresar apellido.");

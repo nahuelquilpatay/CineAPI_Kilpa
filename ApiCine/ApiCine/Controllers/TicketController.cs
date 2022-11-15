@@ -10,15 +10,13 @@ namespace ApiCine.Controllers
     {
         private IServicio oServicio;
         private FabricaServicios oFabrica;
-        
 
         public TicketController()
         {
             oFabrica = new FabricaServiciosImp();
             oServicio = oFabrica.CrearServicio();
         }
-
-        
+   
         [HttpGet("/consultaClientes")]
         public IActionResult GetClientes()
         {
@@ -30,6 +28,7 @@ namespace ApiCine.Controllers
         {
             return Ok(oServicio.getConsultarFunciones());
         }
+
         [HttpGet("/consultaFunciones2")]
         public IActionResult GetFunciones2()
         {
@@ -40,8 +39,7 @@ namespace ApiCine.Controllers
         public IActionResult GetTipoPago()
         {
             return Ok(oServicio.getconsultarTipoPago());
-        }
-        
+        }      
         
         [HttpPost("/Ticket")]
         public IActionResult PostTicket(Ticket a) //HIJO DE MIL PUTA
@@ -52,9 +50,8 @@ namespace ApiCine.Controllers
                
             else
                     return Ok(oServicio.getConfirmarTicket(a));        
-        
-        
         }
+
         [HttpPut("/Ticket2")]
         public IActionResult PutTicket(Ticket a)
         {
@@ -70,7 +67,5 @@ namespace ApiCine.Controllers
                 throw e;
             }
         }
-
-
     }
 }

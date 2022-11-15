@@ -47,5 +47,19 @@ namespace FrontEnd.Presentaciones
         {
            
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea Salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void nosotrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNosotros n = new frmNosotros();
+            n.ShowDialog();
+        }
     }
 }

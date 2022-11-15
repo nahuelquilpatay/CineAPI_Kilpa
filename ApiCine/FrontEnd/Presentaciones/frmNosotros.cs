@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FrontEnd.Presentaciones
 {
-    public partial class frmAcercaDe : Form
+    public partial class frmNosotros : Form
     {
-        public frmAcercaDe()
+        public frmNosotros()
         {
             InitializeComponent();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

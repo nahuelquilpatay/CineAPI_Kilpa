@@ -106,6 +106,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmInicio";
             this.Text = "INICIO";
             this.Load += new System.EventHandler(this.frmInicio_Load);

@@ -38,9 +38,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.dvgFunciones = new System.Windows.Forms.DataGridView();
+            this.btnEliminarDvg = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nudSala = new System.Windows.Forms.NumericUpDown();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEliminarDvg = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dvgFunciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSala)).BeginInit();
             this.SuspendLayout();
@@ -98,6 +98,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(65, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(226, 29);
@@ -147,12 +148,19 @@
             this.dvgFunciones.TabIndex = 9;
             this.dvgFunciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgFunciones_CellContentClick);
             // 
+            // btnEliminarDvg
+            // 
+            this.btnEliminarDvg.HeaderText = "Acciones";
+            this.btnEliminarDvg.Name = "btnEliminarDvg";
+            this.btnEliminarDvg.Text = "ELIMINAR";
+            this.btnEliminarDvg.UseColumnTextForButtonValue = true;
+            // 
             // nudSala
             // 
             this.nudSala.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nudSala.Location = new System.Drawing.Point(790, 7);
             this.nudSala.Maximum = new decimal(new int[] {
-            9,
+            8,
             0,
             0,
             0});
@@ -181,13 +189,6 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnEliminarDvg
-            // 
-            this.btnEliminarDvg.HeaderText = "Acciones";
-            this.btnEliminarDvg.Name = "btnEliminarDvg";
-            this.btnEliminarDvg.Text = "ELIMINAR";
-            this.btnEliminarDvg.UseColumnTextForButtonValue = true;
-            // 
             // AltaFuncion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +208,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbPelicula);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "AltaFuncion";
             this.Text = "AGREGAR FUNCIÓN";
             this.Load += new System.EventHandler(this.AltaFuncion_Load);

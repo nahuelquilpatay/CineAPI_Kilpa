@@ -306,6 +306,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmAltaClientes";
             this.Text = "AGREGAR CLIENTE";
             this.Load += new System.EventHandler(this.frmAltaClientes_Load);

@@ -18,30 +18,31 @@ namespace FrontEnd.Presentaciones
 {
     public partial class AltaFuncion : Form
     {
+        private IServicio servicio1;
+        private Funcion funcion;
+        private Pelicula peli;
+        private static AltaFuncion instancia = null;
+
         public AltaFuncion()
         {
-            InitializeComponent();           
-            servicio = new FabricaServiciosImp().CrearServicio();
+            InitializeComponent();
             funcion = new Funcion();
+            peli = new Pelicula();
+            servicio1 = new FabricaServiciosImp().CrearServicio();
         }
-        private IServicio servicio;
 
-        private Funcion funcion;
-
-        private Pelicula peli;
-
-        private static AltaFuncion instancia = null;
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void AltaFuncion_Load(object sender, EventArgs e)
+        private  void AltaFuncion_Load(object sender, EventArgs e)
         {
-            comboPeliculas();
-            cargarFunciones();
+              comboPeliculas();
+              cargarFunciones2();
         }
+
         public static AltaFuncion ObtenerInstancia()
         {
             if (instancia == null || instancia.IsDisposed)
@@ -51,7 +52,6 @@ namespace FrontEnd.Presentaciones
             return instancia;
         }
        
-
         private async Task comboPeliculas()
         {
             string url = "https://localhost:7066/peliculas";
@@ -67,7 +67,11 @@ namespace FrontEnd.Presentaciones
             string url = "https://localhost:7066/consultaFunciones";
             var data = await ClientSingleton.GetInstancia().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Funcion>>(data);
-            dvgFunciones.DataSource = lst;       
+            dvgFunciones.DataSource = lst; 
+        }
+        private async Task cargarFunciones2()
+        {
+            dvgFunciones.DataSource = servicio1.getConsultarFunciones();
         }
 
         private async Task insertFuncionesAsync()
@@ -78,7 +82,6 @@ namespace FrontEnd.Presentaciones
             funcion.Sala = (int)nudSala.Value;
             funcion.Pelicula = Convert.ToInt32(cmbPelicula.SelectedIndex+1);
 
-
             string bodyContent = JsonConvert.SerializeObject(funcion);
             string url = "https://localhost:7066/crearFuncion";
             var result = await ClientSingleton.GetInstancia().PostAsync(url, bodyContent);
@@ -88,14 +91,12 @@ namespace FrontEnd.Presentaciones
                 MessageBox.Show("Funcion registrado", 
                     "Informe", 
                     MessageBoxButtons.OK, 
-                    MessageBoxIcon.Information);
-                
+                    MessageBoxIcon.Information);              
             }
             else
             {   
                 MessageBox.Show("Funcion no registrada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private async void btnAceptar_Click(object sender, EventArgs e)
@@ -150,7 +151,11 @@ namespace FrontEnd.Presentaciones
                     MessageBox.Show("Sala ya reservada para la fecha");
                     ok = false;
                 }
-
+            }
+            if (dateTimePicker1.Value < DateTime.Today)
+            {
+                MessageBox.Show("Ingresar funciones posteriores a la fecha de hoy");
+                ok = false;
             }
 
             return ok;
@@ -163,7 +168,6 @@ namespace FrontEnd.Presentaciones
             txtPrecio.Text = "";
             nudSala.Value = 1;
         }
-
         private async void dvgFunciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int entero;
@@ -171,21 +175,26 @@ namespace FrontEnd.Presentaciones
             {
                 entero = Convert.ToInt32(dvgFunciones.CurrentRow.Cells[1].Value);
                 await delFunciones(entero);
+
             }
             await cargarFunciones();
+
         }
         private async Task delFunciones(int id)
         {
             var url = "https://localhost:7066/borrarFuncion?id=" + id;
             var result = await ClientSingleton.GetInstancia().DeleteAsync(url);
+            if(result == "false")
+            {
+                MessageBox.Show("¡ERROR! ACCIÓN NO PERMITIDA EN ESTA FUNCIÓN");
+            }
         }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea Salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
             {
-                this.Dispose();
-                
-                
+                this.Dispose();                             
             }
         }
 

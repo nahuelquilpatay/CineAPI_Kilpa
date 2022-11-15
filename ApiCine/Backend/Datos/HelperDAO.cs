@@ -53,6 +53,7 @@ namespace Backend.Datos
             cnn.Close();
             return tabla;
         }
+
         internal bool Ejecutar(string sp, List<Parametro> lst)
         {
             
@@ -118,7 +119,7 @@ namespace Backend.Datos
                 return filasAfectadas;
             }
             catch (SqlException ex)
-            {
+            {               
                 throw (ex);
             }
             finally

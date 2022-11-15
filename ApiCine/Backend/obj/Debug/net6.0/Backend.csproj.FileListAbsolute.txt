@@ -94,3 +94,15 @@ D:\Repositorios\Cine-CRUD-API\ApiCine\Backend\obj\Debug\net6.0\Backend.dll
 D:\Repositorios\Cine-CRUD-API\ApiCine\Backend\obj\Debug\net6.0\refint\Backend.dll
 D:\Repositorios\Cine-CRUD-API\ApiCine\Backend\obj\Debug\net6.0\Backend.pdb
 D:\Repositorios\Cine-CRUD-API\ApiCine\Backend\obj\Debug\net6.0\ref\Backend.dll
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\bin\Debug\net6.0\Backend.deps.json
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\bin\Debug\net6.0\Backend.dll
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\bin\Debug\net6.0\Backend.pdb
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.csproj.AssemblyReference.cache
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.AssemblyInfoInputs.cache
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.AssemblyInfo.cs
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.csproj.CoreCompileInputs.cache
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.dll
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\refint\Backend.dll
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\Backend.pdb
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\Backend\obj\Debug\net6.0\ref\Backend.dll

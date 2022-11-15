@@ -411,6 +411,8 @@
             this.Controls.Add(this.cboFuncion);
             this.Controls.Add(this.dgvDetalles);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmAltaTickets";
             this.Text = "CREAR TICKET";
             this.Load += new System.EventHandler(this.frmAltaTickets_Load);

@@ -35,8 +35,8 @@ namespace ApiCine.Controllers
                 throw e;
             }
         }
-        [HttpGet("/consultarClientes")]
 
+        [HttpGet("/consultarClientes")]
         public IActionResult GetClientes()
         {
             return Ok(oServicio.getconsultarClientes());
@@ -59,6 +59,7 @@ namespace ApiCine.Controllers
                 throw;
             }
         }
+
         [HttpPost("/Ticket22")]
         public IActionResult PostTicket(Ticket a)
         {
@@ -68,21 +69,6 @@ namespace ApiCine.Controllers
             else
                 return Ok(oServicio.getConfirmarTicket(a));
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //// GET: api/<Clientes>
         //[HttpGet]

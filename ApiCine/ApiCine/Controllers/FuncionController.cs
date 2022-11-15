@@ -43,66 +43,16 @@ namespace ApiCine.Controllers
         }
 
         [HttpDelete("/borrarFuncion")]
-
         public IActionResult deleteFuncion(int id)
         {
             return Ok(oServicio.getEliminarFuncion(id));
         }
-
-        
         
         [HttpGet("/proximoTicket")]
         public IActionResult GetProximoTicket()
         {
             return Ok(oServicio.getProximoTicket());
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         //// GET: FuncionController

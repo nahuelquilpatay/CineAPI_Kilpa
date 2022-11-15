@@ -23,7 +23,6 @@ namespace Backend.Servicios.Interfaces
         DataTable getConsultarUsuarios();
         bool getInsertarUsuarios(Usuario oUsuario);
         List<Pelicula> GetPeliculas();
-        
         List<FuncionComplementaria> getConsultarFuncionesTicket();
     }
 }

@@ -145,10 +145,32 @@ namespace FrontEnd.Presentaciones
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Solo números");
+                    MessageBox.Show("Solo números para costo");
                     txtCosto2.Focus();
                     ok = false;
                 }
+            }
+            if (txtDescuento.Text == "")
+            {
+                MessageBox.Show("Ingresar descuento");
+                return false;
+            }
+            else
+            {
+                try
+                {
+                    int.Parse(txtDescuento.Text);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Solo números para descuento");
+                    return false;
+                }
+            }
+            if (Convert.ToInt32(txtDescuento.Text) > 100 || Convert.ToInt32(txtDescuento.Text) < 0)
+            {
+                MessageBox.Show("El descuento solo puede tener un valor entre 0% y 100%");
+                return false;
             }
             return ok;
         }
