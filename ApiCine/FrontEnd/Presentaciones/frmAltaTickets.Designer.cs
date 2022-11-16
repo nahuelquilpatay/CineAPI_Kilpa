@@ -47,18 +47,19 @@
             this.lblFuncion = new System.Windows.Forms.Label();
             this.cboFuncion = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtCosto2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.id_tipo_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_butaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_funcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nom_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ape_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnQuitar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.txtCosto2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,6 +287,7 @@
             this.id_funcion,
             this.costo,
             this.descuento,
+            this.Dni,
             this.nom_cliente,
             this.ape_cliente,
             this.btnQuitar});
@@ -298,58 +300,6 @@
             this.dgvDetalles.Size = new System.Drawing.Size(958, 266);
             this.dgvDetalles.TabIndex = 12;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
-            // 
-            // id_tipo_pago
-            // 
-            this.id_tipo_pago.HeaderText = "Tipo Pago";
-            this.id_tipo_pago.Name = "id_tipo_pago";
-            this.id_tipo_pago.ReadOnly = true;
-            // 
-            // id_butaca
-            // 
-            this.id_butaca.HeaderText = "Butaca";
-            this.id_butaca.Name = "id_butaca";
-            this.id_butaca.ReadOnly = true;
-            // 
-            // id_funcion
-            // 
-            this.id_funcion.HeaderText = "Funcion";
-            this.id_funcion.Name = "id_funcion";
-            this.id_funcion.ReadOnly = true;
-            // 
-            // costo
-            // 
-            this.costo.HeaderText = "Costo";
-            this.costo.Name = "costo";
-            this.costo.ReadOnly = true;
-            // 
-            // descuento
-            // 
-            this.descuento.HeaderText = "Descuento";
-            this.descuento.Name = "descuento";
-            this.descuento.ReadOnly = true;
-            // 
-            // nom_cliente
-            // 
-            this.nom_cliente.HeaderText = "Nombre";
-            this.nom_cliente.Name = "nom_cliente";
-            this.nom_cliente.ReadOnly = true;
-            // 
-            // ape_cliente
-            // 
-            this.ape_cliente.HeaderText = "Apellido";
-            this.ape_cliente.Name = "ape_cliente";
-            this.ape_cliente.ReadOnly = true;
-            // 
-            // btnQuitar
-            // 
-            this.btnQuitar.HeaderText = "Quitar";
-            this.btnQuitar.Name = "btnQuitar";
-            this.btnQuitar.ReadOnly = true;
-            this.btnQuitar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.btnQuitar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.btnQuitar.Text = "Quitar";
-            this.btnQuitar.UseColumnTextForButtonValue = true;
             // 
             // btnSalir
             // 
@@ -392,6 +342,64 @@
             this.button1.Text = "Anular Tickets";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // id_tipo_pago
+            // 
+            this.id_tipo_pago.HeaderText = "Tipo Pago";
+            this.id_tipo_pago.Name = "id_tipo_pago";
+            this.id_tipo_pago.ReadOnly = true;
+            // 
+            // id_butaca
+            // 
+            this.id_butaca.HeaderText = "Butaca";
+            this.id_butaca.Name = "id_butaca";
+            this.id_butaca.ReadOnly = true;
+            // 
+            // id_funcion
+            // 
+            this.id_funcion.HeaderText = "Funcion";
+            this.id_funcion.Name = "id_funcion";
+            this.id_funcion.ReadOnly = true;
+            // 
+            // costo
+            // 
+            this.costo.HeaderText = "Costo";
+            this.costo.Name = "costo";
+            this.costo.ReadOnly = true;
+            // 
+            // descuento
+            // 
+            this.descuento.HeaderText = "Descuento";
+            this.descuento.Name = "descuento";
+            this.descuento.ReadOnly = true;
+            // 
+            // Dni
+            // 
+            this.Dni.HeaderText = "Dni";
+            this.Dni.Name = "Dni";
+            this.Dni.ReadOnly = true;
+            // 
+            // nom_cliente
+            // 
+            this.nom_cliente.HeaderText = "Nombre";
+            this.nom_cliente.Name = "nom_cliente";
+            this.nom_cliente.ReadOnly = true;
+            // 
+            // ape_cliente
+            // 
+            this.ape_cliente.HeaderText = "Apellido";
+            this.ape_cliente.Name = "ape_cliente";
+            this.ape_cliente.ReadOnly = true;
+            // 
+            // btnQuitar
+            // 
+            this.btnQuitar.HeaderText = "Quitar";
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.ReadOnly = true;
+            this.btnQuitar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnQuitar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.btnQuitar.Text = "Quitar";
+            this.btnQuitar.UseColumnTextForButtonValue = true;
             // 
             // frmAltaTickets
             // 
@@ -458,14 +466,15 @@
         private Button btnSalir;
         private TextBox txtCosto2;
         private Label label7;
+        private Button button1;
         private DataGridViewTextBoxColumn id_tipo_pago;
         private DataGridViewTextBoxColumn id_butaca;
         private DataGridViewTextBoxColumn id_funcion;
         private DataGridViewTextBoxColumn costo;
         private DataGridViewTextBoxColumn descuento;
+        private DataGridViewTextBoxColumn Dni;
         private DataGridViewTextBoxColumn nom_cliente;
         private DataGridViewTextBoxColumn ape_cliente;
         private DataGridViewButtonColumn btnQuitar;
-        private Button button1;
     }
 }

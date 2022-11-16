@@ -127,6 +127,14 @@ namespace FrontEnd.Presentaciones
                 {
                     MessageBox.Show("Butaca ya reservada");
                     ok = false;
+                }
+            }
+            foreach (DataGridViewRow row in dgvDetalles.Rows)
+            {
+                if (row.Cells["Dni"].Value.ToString() != cboClientes.Text)
+                {
+                    MessageBox.Show("Insertar mismo cliente");
+                    ok = false;
                 }             
             }
             if (txtCosto2.Text == "0")
@@ -201,7 +209,7 @@ namespace FrontEnd.Presentaciones
                 DetalleTicket dt = new DetalleTicket(Costo,Butaca,Funcion,Descuento);
                 oTicket.AgregarDetalle(dt);
   
-                dgvDetalles.Rows.Add(new object[] { tp.nombreTipo, dt.Butaca, dt.Funcion,dt.Costo,dt.Descuento, cliente2.Nombre, cliente2.Apellido});
+                dgvDetalles.Rows.Add(new object[] { tp.nombreTipo, dt.Butaca, dt.Funcion,dt.Costo,dt.Descuento,cliente2.Dni ,cliente2.Nombre, cliente2.Apellido});
 
                 txtCosto.Text = Convert.ToString(oTicket.CalcularSubTotal());
                 CalcularTotal();
