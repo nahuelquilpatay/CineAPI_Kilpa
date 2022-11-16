@@ -19,6 +19,9 @@
     <Compile Update="Presentaciones\frmConsultarTickets.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentaciones\frmFuncRecaudacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentaciones\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -29,6 +32,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentaciones\frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentaciones\frmTicketsTipospago.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -82,5 +82,10 @@ namespace Backend.Servicios.Implementaciones
         {
             return oDao.getEliminarTicket(idTicket);
         }
+
+        public DataTable getConsultarReportes(string sp)
+        {
+            return oDao.getConsultarReportes(sp);
+        }
     }
 }

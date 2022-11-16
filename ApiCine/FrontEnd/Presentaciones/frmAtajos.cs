@@ -61,5 +61,17 @@ namespace FrontEnd.Presentaciones
             frmNosotros n = new frmNosotros();
             n.ShowDialog();
         }
+
+        private void rECAUDACIÓNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFuncRecaudacion frr = new frmFuncRecaudacion();
+            frr.ShowDialog();
+        }
+
+        private void pORTIPOSDEPAGOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTicketsTipospago ttt = new frmTicketsTipospago();
+            ttt.ShowDialog();
+        }
     }
 }

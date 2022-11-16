@@ -33,6 +33,10 @@
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fUNCIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rECAUDACIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tICKETSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pORTIPOSDEPAGOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nosotrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,9 +87,42 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fUNCIONESToolStripMenuItem,
+            this.tICKETSToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // fUNCIONESToolStripMenuItem
+            // 
+            this.fUNCIONESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rECAUDACIÓNToolStripMenuItem});
+            this.fUNCIONESToolStripMenuItem.Name = "fUNCIONESToolStripMenuItem";
+            this.fUNCIONESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fUNCIONESToolStripMenuItem.Text = "FUNCIONES";
+            // 
+            // rECAUDACIÓNToolStripMenuItem
+            // 
+            this.rECAUDACIÓNToolStripMenuItem.Name = "rECAUDACIÓNToolStripMenuItem";
+            this.rECAUDACIÓNToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.rECAUDACIÓNToolStripMenuItem.Text = "RECAUDACIÓN";
+            this.rECAUDACIÓNToolStripMenuItem.Click += new System.EventHandler(this.rECAUDACIÓNToolStripMenuItem_Click);
+            // 
+            // tICKETSToolStripMenuItem
+            // 
+            this.tICKETSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pORTIPOSDEPAGOToolStripMenuItem});
+            this.tICKETSToolStripMenuItem.Name = "tICKETSToolStripMenuItem";
+            this.tICKETSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tICKETSToolStripMenuItem.Text = "TICKETS";
+            // 
+            // pORTIPOSDEPAGOToolStripMenuItem
+            // 
+            this.pORTIPOSDEPAGOToolStripMenuItem.Name = "pORTIPOSDEPAGOToolStripMenuItem";
+            this.pORTIPOSDEPAGOToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.pORTIPOSDEPAGOToolStripMenuItem.Text = "POR TIPOS DE PAGO";
+            this.pORTIPOSDEPAGOToolStripMenuItem.Click += new System.EventHandler(this.pORTIPOSDEPAGOToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem
             // 
@@ -98,7 +135,7 @@
             // nosotrosToolStripMenuItem
             // 
             this.nosotrosToolStripMenuItem.Name = "nosotrosToolStripMenuItem";
-            this.nosotrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nosotrosToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.nosotrosToolStripMenuItem.Text = "Nosotros";
             this.nosotrosToolStripMenuItem.Click += new System.EventHandler(this.nosotrosToolStripMenuItem_Click);
             // 
@@ -163,5 +200,9 @@
         private PictureBox pictureBox1;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem nosotrosToolStripMenuItem;
+        private ToolStripMenuItem fUNCIONESToolStripMenuItem;
+        private ToolStripMenuItem rECAUDACIÓNToolStripMenuItem;
+        private ToolStripMenuItem tICKETSToolStripMenuItem;
+        private ToolStripMenuItem pORTIPOSDEPAGOToolStripMenuItem;
     }
 }

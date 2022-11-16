@@ -26,5 +26,7 @@ namespace Backend.Datos.Interfaces
         DataTable getConsultarUsuarios();
         bool getInsertarUsuarios(Usuario oUsuario);
         List<Pelicula> GetPeliculas();
+        DataTable getConsultarReportes(string sp);
+
     }
 }

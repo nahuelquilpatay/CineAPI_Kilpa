@@ -26,5 +26,6 @@ namespace Backend.Servicios.Interfaces
         List<FuncionComplementaria> getConsultarFuncionesTicket();
         List<Ticket> getconsultarTicket();
         public bool getEliminarTicket(int idTicket);
+        DataTable getConsultarReportes(string sp);
     }
 }

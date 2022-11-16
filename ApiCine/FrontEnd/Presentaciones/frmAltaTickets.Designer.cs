@@ -47,10 +47,6 @@
             this.lblFuncion = new System.Windows.Forms.Label();
             this.cboFuncion = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.txtCosto2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.id_tipo_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_butaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_funcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +56,10 @@
             this.nom_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ape_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnQuitar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtCosto2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 15;
+            this.label6.TabIndex = 16;
             this.label6.Text = "Total:";
             // 
             // txtTotal
@@ -81,7 +81,7 @@
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(135, 24);
-            this.txtTotal.TabIndex = 16;
+            this.txtTotal.TabIndex = 17;
             // 
             // txtDescuento
             // 
@@ -89,7 +89,7 @@
             this.txtDescuento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(78, 24);
-            this.txtDescuento.TabIndex = 10;
+            this.txtDescuento.TabIndex = 11;
             this.txtDescuento.Text = "0";
             // 
             // label5
@@ -101,7 +101,7 @@
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 15);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 10;
             this.label5.Text = "Descuento:";
             // 
             // label4
@@ -113,7 +113,7 @@
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 15);
-            this.label4.TabIndex = 13;
+            this.label4.TabIndex = 14;
             this.label4.Text = "Subtotal:";
             // 
             // txtCosto
@@ -122,7 +122,7 @@
             this.txtCosto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtCosto.Name = "txtCosto";
             this.txtCosto.Size = new System.Drawing.Size(118, 24);
-            this.txtCosto.TabIndex = 14;
+            this.txtCosto.TabIndex = 15;
             // 
             // label3
             // 
@@ -133,7 +133,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 15);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 2;
             this.label3.Text = "Tipo de pago:";
             // 
             // cboTipoPagos
@@ -143,7 +143,7 @@
             this.cboTipoPagos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboTipoPagos.Name = "cboTipoPagos";
             this.cboTipoPagos.Size = new System.Drawing.Size(299, 23);
-            this.cboTipoPagos.TabIndex = 4;
+            this.cboTipoPagos.TabIndex = 3;
             // 
             // cboClientes
             // 
@@ -152,7 +152,7 @@
             this.cboClientes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cboClientes.Name = "cboClientes";
             this.cboClientes.Size = new System.Drawing.Size(198, 23);
-            this.cboClientes.TabIndex = 6;
+            this.cboClientes.TabIndex = 5;
             // 
             // label2
             // 
@@ -163,7 +163,7 @@
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 15);
-            this.label2.TabIndex = 5;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Cliente:";
             // 
             // btnAgregar
@@ -172,7 +172,7 @@
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(146, 24);
-            this.btnAgregar.TabIndex = 11;
+            this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
@@ -186,7 +186,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 15);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Butaca:";
             // 
             // cboButaca
@@ -217,7 +217,7 @@
             this.cboButaca.Margin = new System.Windows.Forms.Padding(2);
             this.cboButaca.Name = "cboButaca";
             this.cboButaca.Size = new System.Drawing.Size(199, 23);
-            this.cboButaca.TabIndex = 8;
+            this.cboButaca.TabIndex = 7;
             // 
             // btnCancelar
             // 
@@ -225,7 +225,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(90, 22);
-            this.btnCancelar.TabIndex = 18;
+            this.btnCancelar.TabIndex = 19;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -248,7 +248,7 @@
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(90, 22);
-            this.btnAceptar.TabIndex = 17;
+            this.btnAceptar.TabIndex = 18;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -262,7 +262,7 @@
             this.lblFuncion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFuncion.Name = "lblFuncion";
             this.lblFuncion.Size = new System.Drawing.Size(52, 15);
-            this.lblFuncion.TabIndex = 1;
+            this.lblFuncion.TabIndex = 0;
             this.lblFuncion.Text = "Función:";
             // 
             // cboFuncion
@@ -272,7 +272,7 @@
             this.cboFuncion.Margin = new System.Windows.Forms.Padding(2);
             this.cboFuncion.Name = "cboFuncion";
             this.cboFuncion.Size = new System.Drawing.Size(332, 23);
-            this.cboFuncion.TabIndex = 2;
+            this.cboFuncion.TabIndex = 1;
             // 
             // dgvDetalles
             // 
@@ -298,50 +298,8 @@
             this.dgvDetalles.RowHeadersWidth = 51;
             this.dgvDetalles.RowTemplate.Height = 24;
             this.dgvDetalles.Size = new System.Drawing.Size(958, 266);
-            this.dgvDetalles.TabIndex = 12;
+            this.dgvDetalles.TabIndex = 13;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(8, 414);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(90, 22);
-            this.btnSalir.TabIndex = 19;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // txtCosto2
-            // 
-            this.txtCosto2.Location = new System.Drawing.Point(739, 23);
-            this.txtCosto2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtCosto2.Name = "txtCosto2";
-            this.txtCosto2.Size = new System.Drawing.Size(78, 24);
-            this.txtCosto2.TabIndex = 20;
-            this.txtCosto2.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(690, 32);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 15);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Costo:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(103, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Anular Tickets";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // id_tipo_pago
             // 
@@ -400,6 +358,48 @@
             this.btnQuitar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseColumnTextForButtonValue = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(8, 414);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(90, 22);
+            this.btnSalir.TabIndex = 20;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // txtCosto2
+            // 
+            this.txtCosto2.Location = new System.Drawing.Point(739, 23);
+            this.txtCosto2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtCosto2.Name = "txtCosto2";
+            this.txtCosto2.Size = new System.Drawing.Size(78, 24);
+            this.txtCosto2.TabIndex = 9;
+            this.txtCosto2.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(690, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 15);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Costo:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(103, 413);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Anular Tickets";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmAltaTickets
             // 

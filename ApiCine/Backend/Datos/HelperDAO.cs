@@ -53,6 +53,19 @@ namespace Backend.Datos
             cnn.Close();
             return tabla;
         }
+        /*public DataTable consultarReportes(string NombreSp)
+        {
+
+            DataTable tabla = new DataTable();
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = NombreSp;
+            cmd.Connection = cnn;
+            tabla.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return tabla;
+        }*/
 
         internal bool Ejecutar(string sp, List<Parametro> lst)
         {

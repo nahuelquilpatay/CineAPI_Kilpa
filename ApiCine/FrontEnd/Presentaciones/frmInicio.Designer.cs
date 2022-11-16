@@ -44,7 +44,7 @@
             this.btnLogin.Location = new System.Drawing.Point(83, 42);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(181, 42);
-            this.btnLogin.TabIndex = 0;
+            this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "INICIAR SESION";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -55,7 +55,7 @@
             this.button1.Location = new System.Drawing.Point(270, 42);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 42);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 2;
             this.button1.Text = "REGISTRARSE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -67,7 +67,7 @@
             this.label1.Location = new System.Drawing.Point(212, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 21);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 0;
             this.label1.Text = "CINE LATINO";
             // 
             // lblHora
@@ -77,7 +77,7 @@
             this.lblHora.Location = new System.Drawing.Point(490, 97);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(39, 15);
-            this.lblHora.TabIndex = 3;
+            this.lblHora.TabIndex = 5;
             this.lblHora.Text = "label2";
             // 
             // lblFecha
@@ -87,7 +87,7 @@
             this.lblFecha.Location = new System.Drawing.Point(12, 97);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(39, 15);
-            this.lblFecha.TabIndex = 4;
+            this.lblFecha.TabIndex = 3;
             this.lblFecha.Text = "label2";
             // 
             // tmrCine
@@ -101,7 +101,7 @@
             this.btnSalirr.Location = new System.Drawing.Point(228, 93);
             this.btnSalirr.Name = "btnSalirr";
             this.btnSalirr.Size = new System.Drawing.Size(75, 23);
-            this.btnSalirr.TabIndex = 5;
+            this.btnSalirr.TabIndex = 4;
             this.btnSalirr.Text = "SALIR";
             this.btnSalirr.UseVisualStyleBackColor = true;
             this.btnSalirr.Click += new System.EventHandler(this.btnSalirr_Click);
