@@ -73,5 +73,11 @@ namespace FrontEnd.Presentaciones
             frmTicketsTipospago ttt = new frmTicketsTipospago();
             ttt.ShowDialog();
         }
+
+        private void rECAUDACIÓNToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPelisRecaudacion pre = new frmPelisRecaudacion();
+            pre.ShowDialog();
+        }
     }
 }

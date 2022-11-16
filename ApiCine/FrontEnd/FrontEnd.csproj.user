@@ -31,6 +31,9 @@
     <Compile Update="Presentaciones\frmNosotros.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentaciones\frmPelisRecaudacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentaciones\frmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>

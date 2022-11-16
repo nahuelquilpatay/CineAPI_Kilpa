@@ -369,3 +369,4 @@ C:\Users\illan\OneDrive\Escritorio\CINE_githubkilpa\CineAPI_Kilpa\ApiCine\FrontE
 C:\Users\illan\OneDrive\Escritorio\CINE_githubkilpa\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\ref\FrontEnd.dll
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmFuncRecaudacion.resources
 D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmTicketsTipospago.resources
+D:\RepositoriosYo\CineAPI_Kilpa\ApiCine\FrontEnd\obj\Debug\net6.0-windows\FrontEnd.Presentaciones.frmPelisRecaudacion.resources

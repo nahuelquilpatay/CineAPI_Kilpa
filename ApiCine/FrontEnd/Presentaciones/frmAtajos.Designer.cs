@@ -42,6 +42,8 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pELÍCULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rECAUDACIÓNToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,7 +91,8 @@
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fUNCIONESToolStripMenuItem,
-            this.tICKETSToolStripMenuItem});
+            this.tICKETSToolStripMenuItem,
+            this.pELÍCULASToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -164,6 +167,21 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // pELÍCULASToolStripMenuItem
+            // 
+            this.pELÍCULASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rECAUDACIÓNToolStripMenuItem1});
+            this.pELÍCULASToolStripMenuItem.Name = "pELÍCULASToolStripMenuItem";
+            this.pELÍCULASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pELÍCULASToolStripMenuItem.Text = "PELÍCULAS";
+            // 
+            // rECAUDACIÓNToolStripMenuItem1
+            // 
+            this.rECAUDACIÓNToolStripMenuItem1.Name = "rECAUDACIÓNToolStripMenuItem1";
+            this.rECAUDACIÓNToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.rECAUDACIÓNToolStripMenuItem1.Text = "RECAUDACIÓN";
+            this.rECAUDACIÓNToolStripMenuItem1.Click += new System.EventHandler(this.rECAUDACIÓNToolStripMenuItem1_Click);
+            // 
             // frmAtajos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -204,5 +222,7 @@
         private ToolStripMenuItem rECAUDACIÓNToolStripMenuItem;
         private ToolStripMenuItem tICKETSToolStripMenuItem;
         private ToolStripMenuItem pORTIPOSDEPAGOToolStripMenuItem;
+        private ToolStripMenuItem pELÍCULASToolStripMenuItem;
+        private ToolStripMenuItem rECAUDACIÓNToolStripMenuItem1;
     }
 }
